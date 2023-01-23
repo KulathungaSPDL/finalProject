@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+<!-------- Title block start------------->
+{% block title %}
+    User Guide
+{% endblock %}
+<!-------- Title block end------------->
+
+<!-------- Body-content block start------------->
+{% block body_content %}
+        <div class="row">
+            <div class="col text-center">
+                <br>
+                    <p>The main types of exercise include those that focus on aerobic capacity (cardiovascular fitness), strength, flexibility and balance. Each of these benefits your health in different ways. Whatever your motivation for exercise, the best way to ensure all-round fitness and health is to try to incorporate a mix of these different types. </p>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-sx-12">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="https://www.fitnessdayone.com/wp-content/uploads/2021/08/deck-of-cards-pushups.jpg"  alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Push-Ups</h5>
+                    <p class="card-text">Push-ups are a convenient exercise that can do anywhere. They do not need equipment or a gym membership. It is easy to handle yourself </p>
+                    <a href="{{ url_for('PushUpsGuide') }}" class="btn btn-primary">Go to Guide</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-sx-12">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="https://t4.ftcdn.net/jpg/02/78/32/47/360_F_278324715_XvSbvAAN5TzcQMiXv717iqrHxM0RR2Bp.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Squats</h5>
+                    <p class="card-text">The squat is a dynamic strength training exercise that requires several muscles in the upper and lower body to work together simultaneously</p>
+                    <a href="{{ url_for('SqGuide') }}" class="btn btn-primary">Go to Guide</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-sx-12">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="https://media.istockphoto.com/photos/happy-man-and-woman-jumping-outdoors-picture-id943114580?k=20&m=943114580&s=612x612&w=0&h=tr5NedzGEJA-gQKGBnzKUac_9XyZjkLDIbPUpZvhfiA=" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Jumping Jack</h5>
+                    <p class="card-text">Jumping jacks is an intensely physical jumping exercise. Jumping jacks increase heart rate and respiration, challenging the cardiovascular system.</p>
+                    <a href="#" class="btn btn-primary">Go to Guide</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-sx-12">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="https://media.istockphoto.com/photos/man-lifting-barbell-in-a-gym-on-ez-bar-preacher-curl-biceps-exercise-picture-id1190250443?k=20&m=1190250443&s=612x612&w=0&h=dFD3DbItPJIteZmfrbOKGZ6a6v91NbmXq4FzbnN88w8=" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Curl</h5>
+                    <p class="card-text">The biceps curl is a highly recognizable weight-training exercise that works the muscles of the upper arm, and to a lesser extent, those of the lower arm.</p>
+                    <a href="{{ url_for('CurlGuide') }}" class="btn btn-primary">Go to Guide</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+<br>
+{% endblock %}
+<!-------- Body-content block end ------------->

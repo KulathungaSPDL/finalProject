@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+<!-------- Title block start------------->
+{% block title %}
+    Suggestion
+{% endblock %}
+<!-------- Title block end------------->
+
+<!-------- Body-content block start------------->
+{% block body_content %}
+    <br>
+    <div class="row">
+        <div class="col">
+            <h3 class="bg-success text-white ml-3">Push Ups</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+
+                  <th scope="col">Ref</th>
+                  <th scope="col">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in output_data %}
+                    <tr>
+
+                        <td>{{row[1]}}</td>
+                        <td>{{row[2]}}</td>
+                    </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+<br><br><br><br><br><br><br><br><br>
+{% endblock %}
+<!-------- Body-content block end ------------->

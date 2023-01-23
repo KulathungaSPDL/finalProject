@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+<!-------- Title block start------------->
+{% block title %}
+    Routes
+{% endblock %}
+<!-------- Title block end------------->
+
+<!-------- Body-content block start------------->
+{% block body_content %}
+        <div class="row">
+            <div class="col-md-3 col-sm-12">
+                <br>
+                <p>Today Count</p>
+                <br>
+                <table class="table">
+                    <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Steps</th>
+                        <th scope="col">Count</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in output_data %}
+                            <tr>
+                                <td>{{row[0]}}</td>
+                                <td>{{row[1]}}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <br>
+                <a href="{{ url_for('SqGuide') }}" class="btn btn-primary">Go to Guide</a>
+            </div>
+            <div class="col-md-9 col-sm-12">
+                <img src="{{ url_for('video2') }}" class="img-thumbnail" alt="Responsive image">
+            </div>
+        </div>
+{% endblock %}
+<!-------- Body-content block end ------------->
